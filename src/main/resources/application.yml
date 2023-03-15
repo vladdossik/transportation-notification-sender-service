@@ -1,12 +1,20 @@
-logging:
-  level:
-    root: INFO
-server:
-  port: 8041
+spring:
+  application:
+    name: transportation-notification-sender-service
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  liquibase:
+    enabled: true
+
+springdoc:
+  swagger-ui:
+    doc-expansion: none
+    default-model-rendering: model
 
 management:
   server:
-    port: 8041
+    port: 8081
   endpoints:
     enabled-by-default: true
     web.exposure.include: '*'
@@ -16,9 +24,3 @@ management:
       enabled: true
       show-details: always
     loggers.enabled: true
-    prometheus.enabled: true
-
-services:
-  notification-core-service-url: http://localhost:8085/v1
-
-#logging.level.org.springframework.web: DEBUG

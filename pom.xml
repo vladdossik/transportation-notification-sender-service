@@ -16,7 +16,7 @@
         <maven.compile.source>11</maven.compile.source>
         <maven.compile.target>11</maven.compile.target>
         <java.version>11</java.version>
-        <transportation-models.version>1346495f</transportation-models.version>
+        <transportation-models.version>v.0.0.8</transportation-models.version>
     </properties>
     <repositories>
         <repository>
@@ -48,6 +48,16 @@
             <groupId>com.github.vladdossik</groupId>
             <artifactId>transportation-models</artifactId>
             <version>${transportation-models.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-boot-starter</artifactId>
+            <version>3.0.0</version>
         </dependency>
     </dependencies>
 

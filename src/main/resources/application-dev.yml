@@ -1,0 +1,9 @@
+logging:
+  level:
+    root: INFO
+server:
+  port: 8041
+
+services:
+  notification-core-service-url: http://localhost:8085/v1
+  files-service:
