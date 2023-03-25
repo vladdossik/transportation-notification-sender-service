@@ -22,7 +22,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
             .apiInfo(metaData())
             .select()
-            .apis(RequestHandlerSelectors.basePackage("transportation.transportationnotificationsenderservice.controller"))
+            .apis(RequestHandlerSelectors.basePackage("transportation.notification-sender-service.controller"))
             .paths(PathSelectors.any())
             .build();
     }

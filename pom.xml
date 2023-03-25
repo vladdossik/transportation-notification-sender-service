@@ -16,7 +16,7 @@
         <maven.compile.source>11</maven.compile.source>
         <maven.compile.target>11</maven.compile.target>
         <java.version>11</java.version>
-        <transportation-models.version>v.0.0.8</transportation-models.version>
+        <transportation-models.version>v.0.0.12</transportation-models.version>
     </properties>
     <repositories>
         <repository>

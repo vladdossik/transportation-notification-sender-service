@@ -1,6 +1,8 @@
 logging:
   level:
     root: INFO
+    transportation: DEBUG
+
 server:
   port: 8041
 

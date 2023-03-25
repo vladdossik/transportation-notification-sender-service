@@ -14,16 +14,12 @@ public class EmailNotificationWithoutUserDto {
     @Schema(description = "Кому")
     private String to;
 
-    @NotNull
     @Schema(description = "Копия")
     private String cc;
 
-    @NotNull
     @Schema(description = "Скрытая копия")
     private String bcc;
 
-    @NotBlank(message = "Field \"subject\" is mandatory")
-    @NotNull
     @Schema(description = "Тема письма")
     private String subject;
 

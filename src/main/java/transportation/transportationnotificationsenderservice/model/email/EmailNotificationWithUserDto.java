@@ -13,8 +13,6 @@ public class EmailNotificationWithUserDto {
     @Schema(description = "UUID пользователя")
     private UUID user_id;
 
-    @NotBlank(message = "Field \"subject\" is mandatory")
-    @NotNull
     @Schema(description = "Тема письма")
     private String subject;
 
