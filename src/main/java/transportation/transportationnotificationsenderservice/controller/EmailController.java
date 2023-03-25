@@ -6,7 +6,6 @@ import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
-import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import notifications.NotificationDto;
 import org.springframework.http.MediaType;
@@ -22,6 +21,7 @@ import transportation.transportationnotificationsenderservice.mapper.Notificatio
 import transportation.transportationnotificationsenderservice.model.email.EmailNotificationWithUserDto;
 import transportation.transportationnotificationsenderservice.model.email.EmailNotificationWithoutUserDto;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Validated
