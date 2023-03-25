@@ -76,12 +76,13 @@
                         </goals>
                         <configuration>
                             <classifier>spring-boot</classifier>
-                            <mainClass>transportation.TransportationUserApplication
+                            <mainClass>transportation.transportationnotificationsenderservice.TransportationNotificationSenderServiceApplication
                             </mainClass>
                         </configuration>
                     </execution>
                 </executions>
             </plugin>
+
         </plugins>
     </build>
 
