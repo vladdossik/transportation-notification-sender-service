@@ -36,7 +36,7 @@ public class EmailController {
 
     @Operation(summary = "Отправить уведомление по email")
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Запрос выполнен успешно", content = @Content(schema = @Schema(implementation = NotificationDto.class))),
+        @ApiResponse(responseCode = "200", description = "Запрос выполнен успешно", content = @Content(schema = @Schema(implementation = NotificationDto[].class))),
         @ApiResponse(responseCode = "400", description = "Ошибочный запрос"),
         @ApiResponse(responseCode = "503", description = "Сервис временно недоступен")
     })
@@ -54,7 +54,7 @@ public class EmailController {
 
     @Operation(summary = "Отправить уведомление по user_id")
     @ApiResponses(value = {
-        @ApiResponse(responseCode = "200", description = "Запрос выполнен успешно", content = @Content(schema = @Schema(implementation = NotificationDto.class))),
+        @ApiResponse(responseCode = "200", description = "Запрос выполнен успешно", content = @Content(schema = @Schema(implementation = NotificationDto[].class))),
         @ApiResponse(responseCode = "400", description = "Ошибочный запрос"),
         @ApiResponse(responseCode = "503", description = "Сервис временно недоступен")
     })

@@ -27,7 +27,7 @@ public abstract class AbstractInitialization {
         emailNotificationWithoutUserDto.setContent("Some content. Hello world!");
 
         emailNotificationWithUserDto = new EmailNotificationWithUserDto();
-        emailNotificationWithUserDto.setUser_id(userExternalId);
+        emailNotificationWithUserDto.setUserId(userExternalId);
         emailNotificationWithUserDto.setSubject("Some subject");
         emailNotificationWithUserDto.setContent("Some content form user. Hello world!");
     }

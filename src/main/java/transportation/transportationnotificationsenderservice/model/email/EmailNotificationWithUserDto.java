@@ -11,7 +11,7 @@ import java.util.UUID;
 public class EmailNotificationWithUserDto {
     @NotNull(message = "Field \"user_id\" is mandatory")
     @Schema(description = "UUID пользователя")
-    private UUID user_id;
+    private UUID userId;
 
     @Schema(description = "Тема письма")
     private String subject;

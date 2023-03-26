@@ -87,7 +87,6 @@
                         <exclude>**/*/TransportationNotificationSenderServiceApplication.class</exclude>
                         <exclude>**/*/controller/**</exclude>
                         <exclude>**/*/exception/**</exclude>
-                        <exclude>**/*/mapper/**</exclude>
                         <exclude>**/*/model/**</exclude>
                         <exclude>**/*/config/**</exclude>
                     </excludes>

@@ -36,7 +36,7 @@ public class NotificationConverter {
             NotificationSettings notificationSettings = new NotificationSettings();
             notificationSettings.setSubject(emailNotificationWithoutUserDto.getSubject());
             notificationSettings.setMessage(emailNotificationWithoutUserDto.getContent());
-            notificationDto.setUserId(emailNotificationWithoutUserDto.getUser_id());
+            notificationDto.setUserId(emailNotificationWithoutUserDto.getUserId());
             notificationDto.setSettings(notificationSettings);
             notificationDto.setType(NotificationType.EMAIL);
             notificationDtoList.add(notificationDto);

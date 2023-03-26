@@ -38,7 +38,7 @@ public class NotificationConverterTest extends AbstractInitialization {
     public void emailNotificationWithUserToNotificationTest() {
         List<NotificationDto> notificationDtoList = notificationConverter.emailNotificationWithUserToNotification(List.of(emailNotificationWithUserDto));
         NotificationDto notificationDto = notificationDtoList.get(0);
-        assertEquals(notificationDto.getUserId(), emailNotificationWithUserDto.getUser_id());
+        assertEquals(notificationDto.getUserId(), emailNotificationWithUserDto.getUserId());
         assertEquals(notificationDto.getType(), NotificationType.EMAIL);
         assertNull(notificationDto.getSettings().getTo());
         assertNull(notificationDto.getSettings().getCc());
